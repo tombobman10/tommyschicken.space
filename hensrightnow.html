@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- tommy was here. im using bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">tommyschicken.space</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">breed info
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li ><a href="roadislandred.html" >road island reds</a></li>
+          <li><a href="isabrown.html">isa brown</a></li>
+          <li ><a href="jerseygiant.html">jersey giant</a></li>
+        </ul>
+      </li>
+      <li class="active"><a href="hensrightnow.html">hens right now</a></li>
+      <li><a href="https://form.jotform.com/211839034929058">order</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron text-center" >
+  <h1>Tommy's Chicken Space</h1>
+  <p>Local Only</p>
+</div>
+  <h2>Find A Hen</h2>
+  <p>search a name or breed to see if there laying</p>
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>breed</th>
+        <th>status</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>abeed</td>
+        <td>saphier jem</td>
+        <td>we have no clue</td>
+      </tr>
+      <tr>
+        <td>abra</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>alexa</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>bellatricks</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>bird</td>
+        <td>jeursey giant</td>
+        <td>laying</td>
+      </tr>
+      <tr>
+        <td>chow chang</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>gavey</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>ginny</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>herminey</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>jan</td>
+        <td>road island red</td>
+        <td>laying</td>
+      </tr>
+      <tr>
+        <td>karen</td>
+        <td>road island red</td>
+        <td>laying</td>
+      </tr>
+      <tr>
+        <td>lilya</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>lucy</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>luna</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>melinia</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>meradeth</td>
+        <td>road island red</td>
+        <td>laying</td>
+      </tr>
+      <tr>
+        <td>narsisa</td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>ninfadora </td>
+        <td>isa brown</td>
+        <td>not laying</td>
+      </tr>
+      <tr>
+        <td>tweety</td>
+        <td>jeursey giant</td>
+        <td>laying</td>
+      </tr>
+      <tr>
+        <td>rocking robin</td>
+        <td>i dont know</td>
+        <td>not laying</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+$(document).ready(function(){
+$("#myInput").on("keyup", function() {
+  var value = $(this).val().toLowerCase();
+  $("#myTable tr").filter(function() {
+    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+  });
+});
+});
+</script>
+<!-- Footer -->
+<footer class="page-footer bg-dark">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row blue">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">tommys chicken space</h5>
+        <p> a place for eggs is our slogan, but were much more. tommyschicken.space is just one branch of tommy inc. tommy inc is also in chare of the tommy times,
+         tommy honey, and a soap company. for contact info, email tommy@tommyschicken.space</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">other branches</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#">soap</a>
+          </li>
+          <li>
+            <a href="#">honey</a>
+          </li>
+          <li>
+            <a href="#">plants</a>
+          </li>
+          <li>
+            <a href="#">news</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">chicken images</a>
+          </li>
+          <li>
+            <a href="https://form.jotform.com/211839034929058">order</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vTPHou9sPDVpIMSQsNv4uJi2xPAqiZfBu281Vi-EVPfgu-tYfkqh41tOfuzUqEIfK3GMMXPxXkHeZdF/pub">feed</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vSLPZxxO2xrO_mH_4im07glh68f8mOHDNx1IGyOhW7fvaRXozSkswpr_bgJUGsJqIb3ZQyhuDr20f3y/pub">coop</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="http://tommyschicken.space/"> tommyschicken.space</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</div>
+  </body>
+</html>
